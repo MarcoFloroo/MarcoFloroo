@@ -3,105 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marco Floro | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-            color: #333;
-        }
-        /* Header Styles */
-        header {
-            background-color: #d32f2f; /* Red background */
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3.5rem;
-            letter-spacing: 1px;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            margin-top: 30px;
-            background-color: #ff5722; /* Orange-Red */
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #e64a19; /* Darker Red */
-        }
-        /* Content Styles */
-        .content {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #fafafa; /* Light gray */
-        }
-        .content h2 {
-            font-size: 2.5rem;
-            color: #d32f2f;
-        }
-        .content p {
-            font-size: 1.1rem;
-            color: #555;
-            margin: 20px 0;
-        }
-        /* Footer Styles */
-        footer {
-            background-color: #d32f2f;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        /* Responsiveness for Mobile */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.8rem;
-            }
-            .cta-button {
-                padding: 12px 25px;
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <title>Clothing Brand Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <h1>Marco Floro</h1>
-        <p>Web Developer | Designer | Creator</p>
-        <a href="#portfolio" class="cta-button">Explore My Work</a>
+        <nav>
+            <div class="logo">BrandLogo</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Main Content Section -->
-    <div class="content">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I'm a passionate web developer and designer, here to turn ideas into beautiful digital experiences.</p>
-    </div>
-
-    <!-- Footer Section -->
+    <section id="hero">
+        <h1>Welcome to Our Clothing Brand</h1>
+        <p>Discover the latest trends in fashion.</p>
+        <a href="#collections" class="btn">Shop Now</a>
+    </section>
+    <section id="collections">
+        <h2>Collections</h2>
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$29.99</p>
+        </div>
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$49.99</p>
+        </div>
+        <div class="product-card">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>$39.99</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a fashion brand committed to bringing you the latest styles and trends.</p>
+    </section>
     <footer>
-        <p>&copy; 2026 Marco Floro. All rights reserved.</p>
+        <p>&copy; 2026 Clothing Brand. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
